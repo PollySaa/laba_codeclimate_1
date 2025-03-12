@@ -7,39 +7,80 @@ public class LcmGame {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        System.out.println("Welcome to the Brain Games!");
-        System.out.print("May I have your name? ");
-        String name = scanner.nextLine();
-        System.out.println("Hello, " + name + "!!!");
-        System.out.println("Find the smallest common multiple of given numbers.");
+        greetUser();
+        String name = askForName(scanner);
+        greetUserByName(name);
+        explainRules();
 
+        playGame(scanner, random, name);
+    }
+
+    private static void greetUser() {
+        System.out.println("Welcome to the Brain Games!");
+    }
+
+    private static String askForName(Scanner scanner) {
+        System.out.print("May I have your name? ");
+        return scanner.nextLine();
+    }
+
+    private static void greetUserByName(String name) {
+        System.out.println("Hello, " + name + "!!!");
+    }
+
+    private static void explainRules() {
+        System.out.println("Find the smallest common multiple of given numbers.");
+    }
+
+    private static void playGame(Scanner scanner, Random random, String name) {
         int score = 0;
+
         while (score < 3) {
             int num1 = random.nextInt(20) + 1;
             int num2 = random.nextInt(20) + 1;
             int num3 = random.nextInt(20) + 1;
 
-            int lcm = calculateLcm(num1, num2, num3);
+            displayQuestion(num1, num2, num3);
+            int userAnswer = getUserAnswer(scanner);
 
-            System.out.println("Question: " + num1 + " " + num2 + " " + num3);
-            System.out.print("Your answer: ");
-            int userAnswer = scanner.nextInt();
+            final int lcm = calculateLcm(num1, num2, num3);
 
-            scanner.nextLine();
-
-            if (userAnswer == lcm) {
+            if (checkAnswer(userAnswer, lcm)) {
                 System.out.println("Correct!");
                 score++;
             } else {
-                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was '" + lcm + "'.");
-                System.out.println("Let's try again, " + name + "!");
+                handleWrongAnswer(userAnswer, lcm, name);
                 break;
             }
         }
 
         if (score == 3) {
-            System.out.println("Congratulations, " + name + "!");
+            congratulateUser(name);
         }
+    }
+
+    private static void displayQuestion(int num1, int num2, int num3) {
+        System.out.println("Question: " + num1 + " " + num2 + " " + num3);
+    }
+
+    private static int getUserAnswer(Scanner scanner) {
+        System.out.print("Your answer: ");
+        int userAnswer = scanner.nextInt();
+        scanner.nextLine();
+        return userAnswer;
+    }
+
+    private static boolean checkAnswer(int userAnswer, int correctAnswer) {
+        return userAnswer == correctAnswer;
+    }
+
+    private static void handleWrongAnswer(int userAnswer, int correctAnswer, String name) {
+        System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was '" + correctAnswer + "'.");
+        System.out.println("Let's try again, " + name + "!");
+    }
+
+    private static void congratulateUser(String name) {
+        System.out.println("Congratulations, " + name + "!");
     }
 
     private static int calculateLcm(int firstNumber, int secondNumber, int thirdNumber) {
