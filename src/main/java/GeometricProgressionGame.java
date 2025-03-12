@@ -7,10 +7,22 @@ public class GeometricProgressionGame {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        System.out.print("May I have your name? ");
-        String name = scanner.nextLine();
-        System.out.println("Hello, " + name + "!");
+        String name = askForName(scanner);
+        greetUser(name);
 
+        playGame(scanner, random, name);
+    }
+
+    private static String askForName(Scanner scanner) {
+        System.out.print("May I have your name? ");
+        return scanner.nextLine();
+    }
+
+    private static void greetUser(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
+
+    private static void playGame(Scanner scanner, Random random, String name) {
         System.out.println("What number is missing in the progression?");
         int score = 0;
 
@@ -23,29 +35,54 @@ public class GeometricProgressionGame {
             int[] progression = generateProgression(firstTerm, commonRatio, progressionLength);
             String[] progressionWithHidden = hideElement(progression, hiddenIndex);
 
-            System.out.print("Question: ");
-            for (String element : progressionWithHidden) {
-                System.out.print(element + " ");
-            }
-            System.out.println();
+            displayQuestion(progressionWithHidden);
 
-            System.out.print("Your answer: ");
-            int userAnswer = scanner.nextInt();
-            scanner.nextLine(); // Очистка буфера
+            int userAnswer = getUserAnswer(scanner);
 
-            if (userAnswer == progression[hiddenIndex]) {
+            if (checkAnswer(userAnswer, progression[hiddenIndex])) {
                 System.out.println("Correct!");
                 score++;
             } else {
-                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was '" + progression[hiddenIndex] + "'.");
-                System.out.println("Let's try again, " + name + "!");
+                handleWrongAnswer(userAnswer, progression[hiddenIndex], name);
                 break;
             }
         }
 
         if (score == 3) {
-            System.out.println("Congratulations, " + name + "!");
+            congratulateUser(name);
         }
+    }
+
+    private static void displayQuestion(String[] progressionWithHidden) {
+        System.out.print("Question: ");
+        for (String element : progressionWithHidden) {
+            System.out.print(element + " ");
+        }
+        System.out.println();
+    }
+
+    private static int getUserAnswer(Scanner scanner) {
+        System.out.print("Your answer: ");
+        int userAnswer = scanner.nextInt();
+        scanner.nextLine(); // Очистка буфера
+        return userAnswer;
+    }
+
+    private static boolean checkAnswer(int userAnswer, int correctAnswer) {
+        return userAnswer == correctAnswer;
+    }
+
+    private static void handleWrongAnswer(int userAnswer, int correctAnswer, String name) {
+        String wrongAnswerMessage = String.format(
+                "'%d' is wrong answer ;(. Correct answer was '%d'.",
+                userAnswer, correctAnswer
+        );
+        System.out.println(wrongAnswerMessage);
+        System.out.println("Let's try again, " + name + "!");
+    }
+
+    private static void congratulateUser(String name) {
+        System.out.println("Congratulations, " + name + "!");
     }
 
     private static int[] generateProgression(int firstTerm, int commonRatio, int length) {
