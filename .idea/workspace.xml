@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee9a487a-4eab-4906-81b6-d9645af0bdfa" name="Changes" comment="4 test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/games/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="ee9a487a-4eab-4906-81b6-d9645af0bdfa" name="Changes" comment="5 test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/games/GeometricProgressionGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/games/GeometricProgressionGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/games/LcmGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/games/LcmGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/games/engine/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/games/engine/GameLogic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +37,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GeometricProgressionGame.executor": "Run",
-    "Application.Launcher.executor": "Run",
-    "Application.LcmGame.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "climate",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/programJava/laba_codeclimate_1/src/main/java/games/engine"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GeometricProgressionGame.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LcmGame.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;climate&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/programJava/laba_codeclimate_1/src/main/java/games/engine&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\programJava\laba_codeclimate_1\src\main\java\games\engine" />
@@ -107,13 +101,22 @@
       <option name="project" value="LOCAL" />
       <updated>1742029106282</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="5 test">
+      <option name="closed" value="true" />
+      <created>1742200515235</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742200515235</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1 test" />
     <MESSAGE value="3 test" />
     <MESSAGE value="4 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="4 test" />
+    <MESSAGE value="5 test" />
+    <option name="LAST_COMMIT_MESSAGE" value="5 test" />
   </component>
 </project>
