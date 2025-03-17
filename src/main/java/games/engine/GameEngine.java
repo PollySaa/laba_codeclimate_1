@@ -34,6 +34,7 @@ public class GameEngine {
                 score++;
             } else {
                 handleWrongAnswer(userAnswer, correctAnswer, name);
+                return;
             }
         }
 
