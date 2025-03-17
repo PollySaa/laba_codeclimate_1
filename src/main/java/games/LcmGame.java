@@ -1,10 +1,7 @@
 package games;
 
-import games.engine.GameEngine;
 import games.engine.GameLogic;
-
 import java.util.Random;
-import java.util.Scanner;
 
 public class LcmGame implements GameLogic {
 
