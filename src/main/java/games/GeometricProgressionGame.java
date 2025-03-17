@@ -64,30 +64,37 @@ public class GeometricProgressionGame implements GameLogic {
     private int[] generateProgressionFromQuestion(String question) {
         String[] elements = question.split(" ");
         int[] progression = new int[elements.length];
-        int firstTerm = 0;
-        for (String element : elements) {
-            if (!element.equals("..")) {
-                firstTerm = Integer.parseInt(element);
-                break;
-            }
-        }
 
-        int secondTerm = 0;
-        for (String element : elements) {
-            if (!element.equals("..")) {
-                secondTerm = Integer.parseInt(element);
-                if (secondTerm != firstTerm) {
-                    break;
-                }
-            }
-        }
-
+        int firstTerm = findFirstTerm(elements);
+        int secondTerm = findSecondTerm(elements, firstTerm);
         int commonRatio = secondTerm / firstTerm;
+
         progression[0] = firstTerm;
         for (int i = 1; i < elements.length; i++) {
             progression[i] = progression[i - 1] * commonRatio;
         }
 
         return progression;
+    }
+
+    private int findFirstTerm(String[] elements) {
+        for (String element : elements) {
+            if (!element.equals("..")) {
+                return Integer.parseInt(element);
+            }
+        }
+        throw new IllegalArgumentException("No valid first term found in the question.");
+    }
+
+    private int findSecondTerm(String[] elements, int firstTerm) {
+        for (String element : elements) {
+            if (!element.equals("..")) {
+                int term = Integer.parseInt(element);
+                if (term != firstTerm) {
+                    return term;
+                }
+            }
+        }
+        throw new IllegalArgumentException("No valid second term found in the question.");
     }
 }
