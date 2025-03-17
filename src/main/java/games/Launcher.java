@@ -19,8 +19,8 @@ public class Launcher {
     }
 
     private static int getGameChoice(Scanner scanner) {
-        System.out.print("Введите число - 1, если хотите запустить игру 'Geometric Progression Game'" +
-                "\nВведите число - 2, если хотите запустить игру 'LCM Game': ");
+        System.out.print("Введите число - 1, если хотите запустить игру 'Geometric Progression'"
+                + "\nВведите число - 2, если хотите запустить игру 'LCM Game': ");
 
         if (scanner.hasNextInt()) {
             return scanner.nextInt();
