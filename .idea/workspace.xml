@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee9a487a-4eab-4906-81b6-d9645af0bdfa" name="Changes" comment="5 test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ee9a487a-4eab-4906-81b6-d9645af0bdfa" name="Changes" comment="6 test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false"
+              afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/games/GeometricProgressionGame.java" beforeDir="false"
+              afterPath="$PROJECT_DIR$/src/main/java/games/GeometricProgressionGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/games/LcmGame.java" beforeDir="false"
+              afterPath="$PROJECT_DIR$/src/main/java/games/LcmGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +65,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0"
+             DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ee9a487a-4eab-4906-81b6-d9645af0bdfa" name="Changes" comment="" />
@@ -109,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742200515235</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="6 test">
+      <option name="closed" value="true" />
+      <created>1742200887265</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742200887265</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -117,6 +131,7 @@
     <MESSAGE value="3 test" />
     <MESSAGE value="4 test" />
     <MESSAGE value="5 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="5 test" />
+    <MESSAGE value="6 test" />
+    <option name="LAST_COMMIT_MESSAGE" value="6 test" />
   </component>
 </project>

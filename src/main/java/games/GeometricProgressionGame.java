@@ -1,7 +1,6 @@
 package games;
 
 import games.engine.GameLogic;
-
 import java.util.Random;
 
 public class GeometricProgressionGame implements GameLogic {
