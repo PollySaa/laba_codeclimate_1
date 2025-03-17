@@ -23,9 +23,12 @@ public class Launcher {
                 + "\nВведите число - 2, если хотите запустить игру 'LCM Game': ");
 
         if (scanner.hasNextInt()) {
-            return scanner.nextInt();
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+            return choice;
         } else {
             System.out.println("Ошибка: Введено не число!");
+            scanner.nextLine();
             return -1;
         }
     }

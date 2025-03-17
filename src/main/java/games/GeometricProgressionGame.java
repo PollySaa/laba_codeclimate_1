@@ -64,9 +64,25 @@ public class GeometricProgressionGame implements GameLogic {
     private int[] generateProgressionFromQuestion(String question) {
         String[] elements = question.split(" ");
         int[] progression = new int[elements.length];
-        int firstTerm = Integer.parseInt(elements[0]);
-        int commonRatio = Integer.parseInt(elements[1]) / firstTerm;
+        int firstTerm = 0;
+        for (String element : elements) {
+            if (!element.equals("..")) {
+                firstTerm = Integer.parseInt(element);
+                break;
+            }
+        }
 
+        int secondTerm = 0;
+        for (String element : elements) {
+            if (!element.equals("..")) {
+                secondTerm = Integer.parseInt(element);
+                if (secondTerm != firstTerm) {
+                    break;
+                }
+            }
+        }
+
+        int commonRatio = secondTerm / firstTerm;
         progression[0] = firstTerm;
         for (int i = 1; i < elements.length; i++) {
             progression[i] = progression[i - 1] * commonRatio;
