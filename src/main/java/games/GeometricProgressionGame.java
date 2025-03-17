@@ -88,13 +88,14 @@ public class GeometricProgressionGame implements GameLogic {
 
     private int findSecondTerm(String[] elements, int firstTerm) {
         for (String element : elements) {
-            if (!element.equals("..")) {
-                int term = Integer.parseInt(element);
-                if (term != firstTerm) {
-                    return term;
-                }
+            if (isValidTerm(element, firstTerm)) {
+                return Integer.parseInt(element);
             }
         }
-        throw new IllegalArgumentException("No valid second term found in the question.");
+        return firstTerm;
+    }
+
+    private boolean isValidTerm(String element, int firstTerm) {
+        return !element.equals("..") && Integer.parseInt(element) != firstTerm;
     }
 }
