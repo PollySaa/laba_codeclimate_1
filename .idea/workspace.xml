@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee9a487a-4eab-4906-81b6-d9645af0bdfa"
-          name="Changes" comment="8 test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml"
-              beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml"
-              afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false"
-              afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/games/GeometricProgressionGame.java"
-              beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/games/GeometricProgressionGame.java"
-              afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/games/Launcher.java"
-              beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/games/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/games/engine/GameEngine.java"
-              beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/games/engine/GameEngine.java"
-              afterDir="false" />
+    <list default="true" id="ee9a487a-4eab-4906-81b6-d9645af0bdfa" name="Changes" comment="9 test">
+      <change beforePath="$PROJECT_DIR$/src/main/java/games/GeometricProgressionGame.java" beforeDir="false"
+              afterPath="$PROJECT_DIR$/src/main/java/games/GeometricProgressionGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742201510516</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="9 test">
+      <option name="closed" value="true" />
+      <created>1742207231943</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742207231943</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -160,6 +156,7 @@
     <MESSAGE value="6 test" />
     <MESSAGE value="7 test" />
     <MESSAGE value="8 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="8 test" />
+    <MESSAGE value="9 test" />
+    <option name="LAST_COMMIT_MESSAGE" value="9 test" />
   </component>
 </project>
