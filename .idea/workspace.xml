@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee9a487a-4eab-4906-81b6-d9645af0bdfa" name="Changes" comment="3 test">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/games/engine/GameEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/games/engine/GameLogic.java" afterDir="false" />
+    <list default="true" id="ee9a487a-4eab-4906-81b6-d9645af0bdfa" name="Changes" comment="4 test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/games/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GeometricProgressionGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/games/GeometricProgressionGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LcmGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/games/LcmGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/games/GeometricProgressionGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/games/GeometricProgressionGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/games/LcmGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/games/LcmGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/games/engine/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/games/engine/GameLogic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,6 +46,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.GeometricProgressionGame.executor": "Run",
+    "Application.Launcher.executor": "Run",
+    "Application.LcmGame.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "climate",
@@ -97,12 +99,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741776617702</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="4 test">
+      <option name="closed" value="true" />
+      <created>1742029106282</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742029106282</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1 test" />
     <MESSAGE value="3 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="3 test" />
+    <MESSAGE value="4 test" />
+    <option name="LAST_COMMIT_MESSAGE" value="4 test" />
   </component>
 </project>

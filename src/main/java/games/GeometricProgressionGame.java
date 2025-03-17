@@ -1,10 +1,8 @@
 package games;
 
-import games.engine.GameEngine;
 import games.engine.GameLogic;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class GeometricProgressionGame implements GameLogic {
 
@@ -76,11 +74,5 @@ public class GeometricProgressionGame implements GameLogic {
         }
 
         return progression;
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        GameEngine gameEngine = new GameEngine("Geometric Progression Game", "What number is missing in the progression?", 3);
-        gameEngine.startGame(scanner, new GeometricProgressionGame());
     }
 }

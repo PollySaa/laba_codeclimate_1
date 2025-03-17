@@ -44,10 +44,4 @@ public class LcmGame implements GameLogic {
         }
         return firstNumber;
     }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        GameEngine gameEngine = new GameEngine("LCM Game", "Find the smallest common multiple of given numbers.", 3);
-        gameEngine.startGame(scanner, new LcmGame());
-    }
 }
